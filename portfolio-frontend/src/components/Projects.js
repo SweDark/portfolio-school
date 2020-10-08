@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import { ProjectsWrapper } from "../elements/ProjectElements"
 const Projects = ({ projects, title, showLink }) => {
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper className="section projects">
     {/* <section className="section projects"> */}
       <Title title={title} />
       <div className="section-center projects-center">
