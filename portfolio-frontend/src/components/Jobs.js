@@ -2,6 +2,7 @@ import React from "react"
 import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
+import { JobWrapper } from "../elements/JobElements"
 import { Link } from "gatsby"
 
 export const query = graphql`
@@ -33,7 +34,8 @@ const Jobs = () => {
   console.log(company, position, date, desc)
 
   return (
-    <section className="section jobs">
+    <JobWrapper className ="section jobs">
+    {/*  <section className="section jobs"> */}
       <Title title="erfarenhet" />
       <div className="jobs-center">
         {/* btn container */}
@@ -68,7 +70,8 @@ const Jobs = () => {
       <Link to="/about" className="btn center-btn">
         Mitt CV
       </Link>
-    </section>
+    {/* </section> */}
+    </JobWrapper>
   )
 }
 

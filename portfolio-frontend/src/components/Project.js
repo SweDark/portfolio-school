@@ -2,10 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
+import { ProjectWrapper } from "../elements/ProjectElements"
 
 const Project = ({ description, title, github, stack, url, image, index }) => {
   return (
-    <article className="project">
+    <ProjectWrapper className="project">
+    {/* <article className="project"> */}
       {/* if image is not supplied, instead of breaking, dont show any image */}
       {image && (
         <Image fluid={image.childImageSharp.fluid} className="project-img" />
@@ -29,7 +31,8 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
           </a>
         </div>
       </div>
-    </article>
+    {/* </article> */}
+    </ProjectWrapper>
   )
 }
 
